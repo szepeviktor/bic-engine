@@ -1,0 +1,44 @@
+{
+    "name": "bic/engine",
+    "description": "Linux/Windows/MacOS PHP game development framework based on Vulkan API",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "ext-ffi": "*",
+        "ext-json": "*",
+        "symfony/finder": "~5.0",
+        "vlucas/phpdotenv": "~3.0|~4.0",
+        "illuminate/config": "~7.0",
+        "illuminate/container": "~7.0",
+        "illuminate/support": "~7.0",
+        "doctrine/annotations": "~1.10",
+        "monolog/monolog": "~2.0",
+        "serafim/vulkan": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Bic\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bic\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "serafim/ffi-ide-helper": "~1.0",
+        "phpunit/phpunit": "~9.1",
+        "roave/security-advisories": "dev-master",
+        "symfony/var-dumper": "~5.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

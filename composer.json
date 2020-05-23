@@ -1,0 +1,21 @@
+{
+    "name": "serafim/bic-engine",
+    "description": "Sample BIC application",
+    "license": "MIT",
+    "bin": "bin/run.php",
+    "repositories": [
+        {"type": "path", "url": "src/engine"}
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-ffi": "*",
+        "ext-json": "*",
+        "bic/engine": "*"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "~5.0",
+        "serafim/ffi-ide-helper": "~1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
